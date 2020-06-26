@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_roll"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50sp"
+        android:paddingBottom="30sp" />
+
+    <Button
+        android:id="@+id/button_roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100sp"
+        android:shadowColor="@android:color/holo_blue_dark"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="ROLL"
+        android:textSize="40sp" />
+
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10sp"
+        android:shadowColor="@android:color/holo_blue_dark"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textOff="Mute"
+        android:textOn="Unmute" />
+
+</RelativeLayout>
